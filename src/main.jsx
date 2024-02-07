@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
-import routes from './routes'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import routes from "./routes";
+import "./assets/css/tailwind.css";
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={routes} />
-)
+);

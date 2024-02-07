@@ -1,19 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
+import Home from "~/pages/home";
+import Explore from "~/pages/explore";
+import Notifications from "~/pages/notifications";
+import NotFound from "~/pages/not-found";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: "anasayfa component",
+    element: <Home />,
   },
   {
     path: "/explore",
-    element: "explore component",
+    element: <Explore />,
   },
   {
     path: "notifications",
-    element: "notification component",
+    element: <Notifications />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
-
-export default routes
+export default routes;
