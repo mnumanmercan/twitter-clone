@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+}
+
+/* 
+    width: 1265px,
+    left sidebar: 275px,
+    right sidebar: 350px (at home page),
+    content field: auto
+*/
