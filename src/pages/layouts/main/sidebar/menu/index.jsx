@@ -48,7 +48,9 @@ const Menu = () => {
             <div className="pr-4 text-xl">More</div>
           </div>
       </button>
-      <Button size="large">Post</Button>
+      <div className="py-4 w-[90%]">
+        <Button size="large">Post</Button>
+      </div>
     </nav>
   );
 };
