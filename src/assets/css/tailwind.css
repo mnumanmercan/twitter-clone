@@ -5,7 +5,11 @@
 body {
   @apply bg-black text-white text-[15px];
 }
-
+@layer base {
+  html {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
 /* 
     width: 1265px,
     left sidebar: 275px,

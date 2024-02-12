@@ -21,16 +21,15 @@ const More = () => {
           <div className="pr-4 text-xl">More</div>
         </div>
       </Popover.Button>
-      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl">
+      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl overflow-hidden">
         {more.map((item, idx) => (
-          <button className="flex items-start justify-start group outline-none w-full"  key={idx}>
-            <div className="p-3 transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]">
-              <div className="w-[26.25px] h-[26.25px] relative">
-                {item.icon}
-              </div>
-              <div className="pr-4 text-xl">{item.title}</div>
-            </div>
-          </button>
+          <div
+            key={idx}
+            className="px-4 h-14 w-full transition-colors inline-flex items-center gap-5 hover:bg-[#eff3f41a] cursor-pointer"
+          >
+            <div className="w-[26.25px] h-[26.25px] relative">{item.icon}</div>
+            <div className="pr-4 text-xl font-bold">{item.title}</div>
+          </div>
         ))}
       </Popover.Panel>
     </Popover>

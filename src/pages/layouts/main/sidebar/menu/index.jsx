@@ -12,7 +12,7 @@ const Menu = () => {
           {({ isActive }) => (
             <div
               className={classNames(
-                "p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]",
+                "px-3 py-[11px] rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]",
                 {
                   "font-bold": isActive,
                 }
@@ -26,7 +26,7 @@ const Menu = () => {
                 )}
                 {!isActive ? menu.icon.passive : menu.icon.active}
               </div>
-              <div className="pr-4 text-xl">{menu.title}</div>
+              <div className="pr-4 text-xl text-[#e7e9ea] ">{menu.title}</div>
             </div>
           )}
         </NavLink>
